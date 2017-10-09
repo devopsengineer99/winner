@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../../favicon.ico">
+	
+	<link rel="stylesheet" href="../css/style.css">
+
+    <title>Patient Copay Information</title>
+
+
+	
+	 <script type="text/javascript">
+	 
+		 function parseCoPay() {
+		 
+
+
+			var parameters = location.search.substring(1).split("&");
+
+		var temp = parameters[0].split("=");
+		var cpay = unescape(temp[1]);
+
+		document.getElementById("p1").innerHTML = cpay;
+			
+			
+		}
+
+
+	 </script>
+	 
+	
+   
+
+  </head>
+
+  <body onLoad="JavaScript:parseCoPay();">
+
+
+   
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+		   <form action="/addname" method="post" >
+
+          <div class="inner cover">
+		  <h1 class="cover-heading">You have successfully registered to our patient portal</h1>
+            <h1 class="cover-heading">Your copay amount is 
+			<p id="p1"></p>
+
+		</h1>
+			  
+   
+      <br/>
+	  
+
+	
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+   
+	
+  </body>
+</html>

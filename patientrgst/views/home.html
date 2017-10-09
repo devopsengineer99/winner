@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	 <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+	
+	
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Patient Registration</title>
+
+	
+
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 
+	
+
+
+
+
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+ 
+
+   $("#insid").change(function(){
+   
+
+
+   $(this).find("option:selected").each(function(){
+
+         var optionValue = $(this).attr("value");
+		 
+
+           if(optionValue == 'yes'){
+           
+             $("#insopt").show();
+
+           }
+		   else
+		   {
+			 $("#insopt").hide();
+		   }
+
+       });
+
+   }).change();
+});
+	
+
+	</script>
+
+
+	
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+
+ 
+		   <form action="/addname" method="post" >
+
+
+          <div class="login-box animated fadeInUp">
+            <div class="box-header">Patient Registration</div><br/>
+			  First Name <input type="text" name="firstname"   /> <br/> <br/>
+			   Last Name <input type="text" name="lastname"   /> <br/> <br/>
+			  Date of Birth ::
+			  <input name="dob" type="date"> <br/><br/>
+			  Phone Number <br/>  <br/>
+			  <input name="telNo" type="text"><br/><br/>
+			  
+			  Do you have insurance ? 
+			  <select name = "insoption" class="target" id="insid">
+				<option value=""></option>
+				   <option value="yes">yes</option>
+				   <option value="no">no</option>
+				   
+				</select> 
+        
+      <br/>
+	  
+	  <div id="insopt" hidden>
+	 Insurance Carrier <input type="text" name="inscarr"   /> <br/> <br/>
+			  Insurance ID::
+			  <input id="dob" type="text" name ="insid"> <br/><br/>
+		</div>	 
+	  
+	  <div class="mastfoot">
+            <div class="inner">
+             <input type="submit" value="Submit"/>
+
+            </div>
+          </div>
+        </form>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+    </div>
+
+   
+	
+  </body>
+</html>

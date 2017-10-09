@@ -1,0 +1,31 @@
+{
+  "name": "patientrgst",
+  "version": "1.0.0",
+  "description": "mysql",
+  "main": "app.js",
+  "dependencies": {
+    "alert-node": "^0.2.1",
+    "angular-eha.date-of-birth-or-age": "^1.0.3",
+    "boostrap": "^1.0.0",
+    "express": "^4.16.1",
+    "express-form": "^0.12.6",
+    "mongoose": "^4.12.0",
+    "mysql": "^2.14.1",
+    "node-phonenumber": "^0.3.0",
+    "react-phone-number-input": "^0.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devopsengineer99/winner.git"
+  },
+  "author": "sk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devopsengineer99/winner/issues"
+  },
+  "homepage": "https://github.com/devopsengineer99/winner#readme"
+}
